@@ -2,7 +2,8 @@ package com.zipcodewilmington.assessment2.part1;
 
 public class IntegerArrayUtilities {
     public Boolean hasEvenLength(Integer[] array) {
-        return null;
+
+        return (array ); //(array );
     }
 
     public Integer[] range(int start, int stop) {
@@ -10,10 +11,22 @@ public class IntegerArrayUtilities {
     }
 
     public Integer getSumOfFirstTwo(Integer[] array) {
-        return null;
+
+        int sum = 0;
+        for(int i = 0; i < 2; i++){
+           sum+= array[i];
+        }
+
+        return sum;
     }
 
     public Integer getProductOfFirstTwo(Integer[] array) {
-        return null;
+
+        int product = 1;
+        for(int i = array.length - 2; i < array.length; i++){
+            product *= array[i];
+        }
+
+        return product;
     }
 }
