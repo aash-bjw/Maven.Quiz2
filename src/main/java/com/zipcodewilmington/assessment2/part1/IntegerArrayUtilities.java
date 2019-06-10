@@ -2,11 +2,15 @@ package com.zipcodewilmington.assessment2.part1;
 
 public class IntegerArrayUtilities {
     public Boolean hasEvenLength(Integer[] array) {
+        Boolean evenLength = false;
 
-        return (array ); //(array );
+        if(array.length % 2 == 0)
+             evenLength = true;
+        return evenLength ;
     }
 
     public Integer[] range(int start, int stop) {
+
         return null;
     }
 

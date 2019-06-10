@@ -5,6 +5,11 @@ public class WuTangConcatenator {
     }
 
     public Boolean isWu() {
+
+        /**Integer input = 0;
+        if(input % == 3)
+            return true; */
+
         return null;
     }
 
