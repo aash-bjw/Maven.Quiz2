@@ -14,6 +14,7 @@ public class IntegerArrayUtilities {
     public Integer[] range(int start, int stop) {
 
         ArrayList<Integer> outcome = new ArrayList<>();
+
         for(int i = start; i <= stop; i++)
             outcome.add(i);
 
