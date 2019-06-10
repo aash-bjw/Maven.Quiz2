@@ -19,6 +19,8 @@ public class BasicUtilities {
 
     public Boolean startsWith(String string, Character character) {
 
-        return null;
+
+
+        return string.startsWith(character.toString());
     }
 }

@@ -5,12 +5,12 @@ public class WuTangConcatenator {
     }
 
     public Boolean isWu() {
+        boolean multiple = false;
+        int i = 0;
+        if(i % 3 == 0)
+            multiple = true;
 
-        /**Integer input = 0;
-        if(input % == 3)
-            return true; */
-
-        return null;
+        return multiple;
     }
 
     public Boolean isTang() {
