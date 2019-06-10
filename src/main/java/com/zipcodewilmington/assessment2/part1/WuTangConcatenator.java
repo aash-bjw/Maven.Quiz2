@@ -14,10 +14,20 @@ public class WuTangConcatenator {
     }
 
     public Boolean isTang() {
-        return null;
+        boolean multiple = false;
+        int i = 0;
+        if (i % 5 == 0)
+            multiple = true;
+
+        return multiple;
     }
 
     public Boolean isWuTang() {
-        return null;
+        boolean multiple = false;
+        int i = 0;
+        if (i % 3 == 0 && i % 5 == 0)
+            multiple = true;
+
+        return multiple;
     }
 }
