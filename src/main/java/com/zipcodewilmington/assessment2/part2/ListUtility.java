@@ -4,7 +4,8 @@ import java.util.List;
 
 public class ListUtility {
     public Boolean add(int i) {
-        return null;
+
+        return list.add(i);
     }
 
     public Integer size() {
