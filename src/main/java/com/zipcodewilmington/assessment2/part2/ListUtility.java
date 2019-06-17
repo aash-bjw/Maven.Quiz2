@@ -4,34 +4,43 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListUtility {
-    public Boolean add(int i) {
-       //List list = new List
 
-        return null; //list.add(i);
+   ArrayList<Integer> newList = new ArrayList<>(0);
+
+    public Boolean add(int i) {
+        return newList.add(i);
     }
 
     public Integer size() {
-        List<Integer> list = new ArrayList<>();
-        Integer valuesToBeAdded = 0;
-        list.add(valuesToBeAdded);
-        int newSize = list.size();
-
-        return newSize;
+       return newList.size();
     }
 
     public List<Integer> getUnique() {
-        return null;
+        ArrayList<Integer> unique = new ArrayList<>();
+        for(Integer i : newList){
+            if(!unique.contains(i)){
+                unique.add(i);
+            }
+        }
+        return unique;
     }
 
     public String join() {
-        return null;
+        String joinString = "" + newList.get(0);
+        for(int i = 1; i < newList.size(); i++){
+            joinString += ", " + newList.get(i);
+        }
+        return joinString;
     }
 
     public Integer mostCommon() {
-        return null;
+        Integer[] array = new Integer[newList.size()];
+        ArrayUtility arrayUtility = new ArrayUtility();
+        return arrayUtility.mostCommon(newList.toArray(array));
     }
 
     public Boolean contains(Integer valueToAdd) {
-        return null;
+
+        return newList.contains(valueToAdd);
     }
 }
