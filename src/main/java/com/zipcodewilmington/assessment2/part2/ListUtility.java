@@ -1,6 +1,7 @@
 package com.zipcodewilmington.assessment2.part2;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListUtility {
@@ -37,6 +38,7 @@ public class ListUtility {
         Integer[] array = new Integer[newList.size()];
         ArrayUtility arrayUtility = new ArrayUtility();
         return arrayUtility.mostCommon(newList.toArray(array));
+
     }
 
     public Boolean contains(Integer valueToAdd) {

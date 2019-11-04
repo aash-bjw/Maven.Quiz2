@@ -10,6 +10,8 @@ public class Router {
 
 
     public void add(String path, String controller) {
+
+
         outcome.put(path, controller);
     }
 
@@ -23,11 +25,17 @@ public class Router {
         return outcome.get(path);
     }
 
-    public void update(String path, String studentController) {
-        outcome.replace(path, studentController);
+    public void update(String path, String newController) {
+
+        outcome.replace(path, newController);
     }
 
     public void remove(String path) {
+
         outcome.remove(path);
+    }
+
+    public String toString(){
+        return outcome.keySet().toString();
     }
 }
